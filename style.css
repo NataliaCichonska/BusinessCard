@@ -109,9 +109,10 @@ h1 {
 }
 .info {
     gap:1%;
-    align-items: center;
+    align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 7fr;
+    
 }
 .fotox {
     border: #c94b4bc9 solid 10px;
@@ -193,4 +194,14 @@ input {
     margin-top:20px;
     float: right;
     padding: 5px 10px;
+}
+@media only screen and (max-width: 540px) {
+    .fotos {
+        display: none;
+    }
+    .info {
+        gap:1%;
+        align-items: stretch;
+        display: grid;
+        grid-template-columns: 1fr ;}
 }
